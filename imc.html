@@ -1,29 +1,37 @@
-<meta charset="UTF-8">
-
-<script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMC</title>
+</head>
+<body>
+	<script>
 	
-	function pulaLinha() {
-
-		document.write("<br>");	
-		document.write("<br>");	
-	}
-
-	function mostra(frase) {
-
-		document.write(frase);
-		pulaLinha();
-	}
-
-	function calculaImc(altura, peso) {
-
-		return peso / (altura * altura);
-	}
-
-	var imcFlavio = calculaImc(1.71, 73);
-	var imcAmigo = calculaImc(1.72, 68);
-	var totalImc = imcFlavio + imcAmigo;
+		function pulaLinha() {
 	
-	document.write("A soma dos icm's é " + totalImc);
-
-
-</script>
+			document.write("<br>");	
+			document.write("<br>");	
+		}
+	
+		function mostra(frase) {
+	
+			document.write(frase);
+			pulaLinha();
+		}
+	
+		function calculaImc(altura, peso) {
+	
+			return peso / (altura * altura);
+		}
+	
+		var imcFlavio = calculaImc(1.71, 73);
+		var imcAmigo = calculaImc(1.72, 68);
+		var totalImc = imcFlavio + imcAmigo;
+		
+		document.write("A soma dos icm's é " + totalImc);
+	
+	
+	</script>
+</body>
+</html>
