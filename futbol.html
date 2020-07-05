@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
 </head>
 <body>
     <script>
@@ -18,6 +18,19 @@
         document.write(frase);
         pulaLinha();
 }
+    var vitorias = parseInt(prompt("entre com o número de vitórias. "))
+    var empates = parseInt(prompt("entre com o número de empates. "))
+    var pontos = vitorias * 3 + empates;
+
+    mostra("os pontos do seu time é "+ pontos)
+    if(pontos > 28){
+        mostra("Seu time está melhor do que o ano passado. ")}
+    if(pontos < 28){
+        mostra("Seu time está pior do que o ano passado. ")}
+    if(pontos == 28){
+        mostra("Seu time está igual do que o ano passado. ")}
+
+        mostra("FIM")
     </script>
 </body>
 </html>

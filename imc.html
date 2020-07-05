@@ -25,12 +25,24 @@
 			return peso / (altura * altura);
 		}
 	
-		var imcFlavio = calculaImc(1.71, 73);
-		var imcAmigo = calculaImc(1.72, 68);
-		var totalImc = imcFlavio + imcAmigo;
+		var nome = prompt("informe o seu nome");
+		var alturaInformada = prompt("informe o sua altura");
+		var pesoinformado = prompt("informe o seu peso");;
 		
-		document.write("A soma dos icm's é " + totalImc);
+		var imc = calculaImc(alturaInformada, pesoinformado)
+		mostra(nome + " O seu IMC é " + imc);
 	
+	if(imc < 18.5){
+		mostra("Você está a baixo do recomendado")
+	}
+	if(imc > 18.5){
+		mostra("Você está acima do recomendado")
+	}
+	if(imc >= 18.5){
+		if(imc <= 35){
+		mostra("Seu IMC está excelente")
+	}
+	}
 	
 	</script>
 </body>
