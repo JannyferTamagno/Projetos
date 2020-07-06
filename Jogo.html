@@ -18,14 +18,26 @@ function mostra(frase) {
     document.write(frase);
     pulaLinha();
 }
-    var numeroPensado = Math.round(Math.random() * 10);
+function sorteia(n) {
+
+return Math.round(Math.random() * n);
+}
+    var numeroPensado = sorteia(10);
     var chute = parseInt(prompt("Digite seu chute! "));
     if(chute == numeroPensado){
         mostra("você acertou")
-    }
-    if(chute != numeroPensado){
-        mostra("você errou, o número pensado foi " + numeroPensado);
-    }
+    } else {
+
+if(chute > numeroPensado) {
+
+    mostra("Você errou! Seu chute é maior que o número pensado!");
+
+} else {
+
+    mostra("Você errou! Seu chute é menor que o número pensado!");
+}
+
+}
     </script>
 
 </body>
